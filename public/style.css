@@ -1,0 +1,109 @@
+/*CSS geral*/
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    border-bottom: 1px solid rgba(112, 38, 38, 0.589);
+}
+
+/*CSS grandes estruturas*/
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+
+.left-side {
+    flex: 0 0 280px;
+    background-color: rgb(247, 229, 242);
+    padding: 20px;
+}
+
+.right-side {
+    flex: 1;
+    background: rgb(191, 223, 191);
+    padding: 40px;
+}
+
+/*CSS imagem*/
+.profile-text .img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-text .img img {
+    width: 200px;
+    height: 200px;
+}
+
+/*CSS detalhes*/
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.skills ul li, .languages ul li, .about ul li {
+    margin: 10px;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*Responsividade*/
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .left-side {
+        flex: 0 0 30%; 
+        padding: 10px 5px;
+        word-wrap: break-word;
+        box-sizing: border-box;
+    }
+
+    .right-side {
+        flex: 0 0 70%; 
+        padding: 15px 10px;
+        box-sizing: border-box;
+    }
+
+    h1 { 
+        font-size: 14px; 
+    }
+
+    h2 { 
+        font-size: 12px; 
+    }
+    
+    p, li, h3, h4 { 
+        font-size: 10px; line-height: 1.1; 
+    }
+
+    .profile-text .img img {
+        width: 60px;
+        height: 60px;
+    }
+}
